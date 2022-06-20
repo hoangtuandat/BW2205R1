@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet registation form</title>
+</head>
+<body>
+    <h1>Pet registation form</h1>
+    <form action="">
+        <fieldset>
+            <legend>General information</legend>
+            Name: <input type="text" name="Name"> <br>
+            Species:
+            <input type="radio" name="species" value="puppy">Puppy
+            <input type="radio" name="species" value="cat">cat
+            <input type="radio" name="species" value="bird">bird
+            <input type="radio" name="species" value="other">other <br>
+            Gender:
+            <input type="radio" name="gender" value="male">male
+            <input type="radio" name="gender" value="female">female
+            <input type="radio" name="gender" value="other">other <br>
+            Age: <input type="number" name="Age" min="1" max="100">
+            <br>
+            Birthday: <input type="date" name="birthday">
+            <br>
+            Address:
+            <select name="city">
+                <option value="HCM">Ho Chi Minh</option>
+                <option value="Hn">Ha Noi</option>
+                <option value="NB">Ninh Binh</option>
+                <option value="YB">Yen Bai</option>
+            </select>
+            <select name="District">
+                <option value="Quan 1">Quận 1</option>
+                <option value="Quan 2">Quận 2</option>
+                <option value="Quan 3">Quận 3</option>
+                <option value="Quan 4">Quận 4</option>
+                <option value="Quan 5">Quận 5</option>
+            </select>
+            <br>
+            Fur color:
+            <select name="fur color">
+                <option value="white">white</option>
+                <option value="black">Black</option>
+                <option value="orange">Orange</option>
+                <option value="brown">Brown</option>
+            </select>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Pet Photo</legend>
+            Upload photo of your pet here. <br>
+            <input type="file" name="petphoto">
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Things pet love</legend>
+            <input type="checkbox" name="love" value="eating">Eating
+            <input type="checkbox" name="love" value="drinking">Drinking
+            <input type="checkbox" name="love" value="Sleepping">Sleepping
+        
+        <br>
+            <legend>Things pet hate</legend>
+            <input type="checkbox" name="hate" value="shower">Shower
+            <input type="checkbox" name="hate" value="petting">petting
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Special note</legend>
+            <textarea name="specialnote" cols="30" rows="10"></textarea>
+        </fieldset>
+        <br>
+        <button type="submit">submit</button>
+    </form>
+</body>
+</html>
