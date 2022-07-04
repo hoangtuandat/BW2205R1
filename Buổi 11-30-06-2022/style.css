@@ -10,6 +10,13 @@ html, body{
 header{
     height: 20%;
 }
+
+ body button:hover {
+    color: orange;
+    border-color: orange;
+    padding-left: 150px;
+    padding-right: 150px;
+}
 /* cú pháp thẻ con img trong thẻ cha header */
 header img{
     height: 70%;
@@ -22,10 +29,15 @@ header ul{
     margin-top: 50px;
 }
 
-header li{
+header ul li{
     display: inline-block;
     margin-right: 60px;
-    
+    color: #5E8FB5;
+}
+
+header ul li a:hover{
+    color: orange;
+    font-weight: 800;
 }
 
 header button{
@@ -62,4 +74,60 @@ header button{
     height: 50px;
     padding: 5px 40px;
     
+}
+
+.welcome{
+    background-color: #E1EFF4;
+    padding: 70px 30px;
+    height: 1800px;
+}
+.welcome h2{
+    text-align: center;
+    color: #3181be;
+}
+
+.welcome h2::first-letter {
+    font-size: 40px;
+    color: orange;
+}
+
+.house-intro h3 {
+    color: #3181be;
+}
+.house-intro{
+    width: 47%;
+    height: 600px;
+    background-color: white;
+    float: left;
+    margin-bottom: 50px;
+    margin-right: 30px;
+}
+
+.house-intro:nth-child(4), .house-intro:nth-child(5), .house-intro:nth-child(6){
+    width: 30%;
+    height: 500px;
+}
+
+.house-intro:nth-child(4) img, .house-intro:nth-child(5) img, .house-intro:nth-child(6) img {
+    height: 300px;
+}
+.house-intro img{
+    width: 100%;
+    height: 400px;
+}
+
+.intro button, .welcome button{
+    background-color: white;
+    color: #5E8FB5;
+    border: 1px solid #5E8FB5;
+    margin-top: 30px;
+    margin-right: 50px;
+    height: 50px;
+    padding: 5px 40px;   
+    transition: 2s;
+    transition-delay: 2s;
+}
+
+.house-intro p {
+    color: darkgray;
 }
