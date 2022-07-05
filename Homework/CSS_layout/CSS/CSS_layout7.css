@@ -1,0 +1,41 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#menu ul, #menu ul li{
+    list-style: none;
+}
+#menu > ul > li{
+    width: 100px;
+    background-color: chocolate;
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+    line-height: 30px;
+    float: left;
+}
+
+#menu a{
+    text-decoration: none;
+    color:black;
+}
+#menu ul li:hover{
+    background-color: red;
+}
+#menu ul ul{
+    position: absolute;
+    left: 10px;
+    top: 50px;
+    visibility: hidden;
+}
+
+#menu ul li:hover ul li{
+    visibility: visible;
+}
+
+#menu ul li ul li{
+    background-color: cadetblue;
+    width: 200px;
+    line-height: 30px;
+    margin-bottom: 2px;
+}
