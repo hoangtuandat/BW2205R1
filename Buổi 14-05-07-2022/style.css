@@ -75,6 +75,9 @@ header > input{
     header > input{
         display: none;
     }
+    .product{
+        width: 20%;
+    }
 }
 @media screen and (max-width: 600px){
     .product{
