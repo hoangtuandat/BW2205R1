@@ -1,0 +1,83 @@
+body, html{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.banner{
+    background-image: url(./img/bien.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 65vh;
+}
+
+.logo{
+    width: 100px;
+    position: absolute;
+    left: 10%;
+    top: 5%;
+}
+
+.text{
+    text-align: center;
+    color: white;
+    padding-top: 50px;
+    
+}
+
+.text h1{
+    font-size: 70px;
+}
+
+.text P{
+    padding-bottom: 50px;
+}
+
+
+
+.link a{
+    text-decoration: none;
+    background-color:lightgreen;
+    color:white;
+    display: inline-block;
+    width: 100px;
+    padding: 10px;
+    line-height: 40px;
+    position: relative;
+    z-index: 1;
+}
+
+.link a span{
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color:black;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.link a:hover span{
+    width: 100%;
+}
+
+.link a:hover{
+    color:orange;
+    transition: 2s;
+}
+
+.sidenav{
+    background-color: aqua;
+    width: 200px;
+    position: absolute;
+    top: 5%;
+    left: 80%;
+}
+
+.buttom{
+    list-style: none;
+}

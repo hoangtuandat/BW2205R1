@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-basis</title>
+    <style>
+        html, body{
+            width: 100%;
+            height: 100%;
+            margin-top: 50px;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+        .flex-container{
+            width: 70%;
+            height: 70%;
+            background-color: cadetblue;
+
+            display: flex;
+        }
+
+        .item1{
+            background-color: blue;
+        }
+
+        .item2{
+            background-color: brown;
+        }
+
+        .item3{
+            background-color: chartreuse;
+            flex: 0 1 1000px;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="item1">item1</div>
+        <div class="item2">Phần tử thứ 3 đã bị thu nhỏ lại</div>
+        <div class="item3">item3</div>
+    </div>
+</body>
+</html>
