@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Case stady</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./Case_stady.css">
 </head>
 <body>
     <section class="banner">
-        <img class="logo" src="./img/1.jpg" alt="banner">
+        <img class="logo" src="./img/logo2.png" alt="banner">
         <div class="text">
             <h1>Hair Studio</h1>
             <p><i>Style Your Hair Is Style Your Life</i></p>
@@ -18,16 +19,53 @@
                 <a href="#"><span></span> Read More</a>
             </div>
         </div>
-        <div class="sidenav">
-            <ul class="buttom">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Feature</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Testimonial</a></li>
-                <li><a href="#">Meet Us</a></li>
-            </ul>
+        <section id="sidenav">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Feature</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Testimonial</a></li>
+                    <li><a href="#">Meet Us</a></li>
+                </ul>
+            </nav>
+        </section>
+        <div id="menubtn">
+            <img src="./img/nutbam.png" alt="">
         </div>
     </section>
+    <script>
+        var menubtn = document.getElementById("menubtn");
+        var sidenav = document.getElementById("sidenav");
+        var menu = document.getElementById("menu");
+        sidenav.style.right ="-250px"
+        menubtn.onclick = function(){
+            if(sidenav.style.right =="-250px"){
+                sidenav.style.right="0";
+                menu.src ="./img/x.png"
+            }else{
+                sidenav.style.right = "-250px";
+                menu.src ="./img/nutbam.png"
+            }
+        }
+    </script>
+<!-- end sideNav -->
+<!-- Features -->
+<section class="grid-container">
+    <div class="title-text">
+        <p>FEATURES</p>
+        <h1>Why Choose Us</h1>
+    </div>
+    <div class="feature-box">
+        <h2>Experienced Staff</h2>
+        <div class="feature-desr">
+
+        </div>
+    </div>
+    <div class="feature3">c</div>
+</section>
+
+    
     
 </body>
 </html>
