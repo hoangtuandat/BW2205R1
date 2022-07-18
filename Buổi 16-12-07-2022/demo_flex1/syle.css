@@ -1,0 +1,48 @@
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-size: 32px;
+    font-weight: bolder;
+    color: aliceblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container{
+    width: 90%;
+    height: 70%;
+    margin: auto;
+    margin-top: 50px;
+    background-color: darkslategrey;
+
+    /* 
+    flex-direction: row , column , row-reverse, column-reverse
+    justify-content: center, space-around, space-between, space-evenly
+    align-items: enter, flex-star, flex-end
+    align-self: chinh rieng cho 1 item
+    */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.item1{
+    background-color: brown;
+    align-self: flex-start;
+}
+
+.item2{
+    background-color: coral;
+}
+
+.item3{
+    background-color: chartreuse;
+}
+
+.item4{
+    background-color: deepskyblue;
+}
