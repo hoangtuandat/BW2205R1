@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./demo_casestudy.css" />
+  </head>
+  <body>
+    <section id="section">
+      <img src="./Case stady 1/img/logo2.png" alt="" />
+      <div class="text">
+        <h1>Hair Studio</h1>
+        <p><i>Style Your Hair Is Style Your Life</i> </p>
+        <div class="button">
+            <a href="#"><span></span> Find Out</a>
+            <a href="#"><span></span>Read More</a>
+          </div>
+      </div>
+      
+      <div class="sidenav">
+        <ul>
+          <a href="#">Home</a>
+          <a href="#">Feature</a>
+          <a href="#">Service</a>
+          <a href="#">Testimonal</a>
+          <a href="#">Aboutus</a>
+        </ul>
+      </div>
+      <div class="menu">
+        <img src="./Case stady 1/img/nutbam.png" alt="">
+      </div>
+    </section>
+    <script>
+        var menubtn = document.getElementById("menubtn");
+        var sidenav = document.getElementById("sidenav");
+        var menu = document.getElementById("menu");
+        sidenav.style.right ="-250px"
+        menubtn.onclick = function(){
+            if(sidenav.style.right =="-250px"){
+                sidenav.style.right="0";
+                menu.src ="./img/x.png"
+            }else{
+                sidenav.style.right = "-250px";
+                menu.src ="./img/nutbam.png"
+            }
+        }
+
+        // All animations will take exactly 1000ms
+var scroll = new SmoothScroll('a[href*="#"]', {
+	speed: 1000,
+	speedAsDuration: true
+});
+    </script>
+  </body>
+</html>
+
+
